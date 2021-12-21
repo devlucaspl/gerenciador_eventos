@@ -19,3 +19,17 @@ Route::get('/', function () {
 
     return view('welcome', [ 'arr' => $arr ]);
 });
+
+Route::get('/products', function () {
+
+    $arr = [1, 2, 3, 4, 5];
+
+    return view('products', [ 'arr' => $arr ]);
+});
+
+Route::get('/contact', function () {
+
+    $arr = [1, 2, 3, 4, 5];
+
+    return view('contact', [ 'arr' => $arr ]);
+});
