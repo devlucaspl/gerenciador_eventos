@@ -22,9 +22,14 @@ Route::get('/', function () {
 
 Route::get('/products', function () {
 
-    $arr = [1, 2, 3, 4, 5];
+    $busca = request('search');
 
-    return view('products', [ 'arr' => $arr ]);
+    return view('products', [ 'busca' => $busca ]);
+});
+
+Route::get('/product_test/{id?}', function ($id=null) {
+
+    return view('product', [ 'id' => $id ]);
 });
 
 Route::get('/contact', function () {
