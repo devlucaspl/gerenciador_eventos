@@ -183,6 +183,14 @@ header {
     margin: 20px 0;
 }
 
+#item-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#item-list li {
+    display: flex;
+}
 
 /* Footer */
 footer {
