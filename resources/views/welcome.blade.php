@@ -6,24 +6,33 @@
 
 <div id="search-container" class="col-md-12">
     <h1> Eventos </h1>
-    <form action="">
+    <form action="/" method='GET'>
         <input type="text" id="search" name="search" class="form-control" placeholder="Procure um Evento...">
     </form>
 </div>
 <div id="events-container" class="col-md-12">
-    <h2> Proximos Eventos </h2>
+    @if($search)
+        <h2> Buscando por: {{ $search }} </h2>
+    @else
+        <h2> Proximos Eventos </h2>
+    @endif
     <div id="cards-container" class="row">
         @foreach($events as $event)
             <div class="card col-md-3">
                 <img src="/img/events/{{ $event->image }}" alt="{{ $event -> title }}">
                 <div class="card-body">
-                    <p class="card-date"> 12/12/2021 </p>
+                    <p class="card-date"> {{ date('d/m/Y', strtotime($event->date)) }} </p>
                     <h5 class="card-title"> {{ $event -> title }} </h5>
                     <p class="card-participants"> X Participantes </p>
                     <a href="/events/{{ $event->id }}" class="btn btn-primary"> Saber Mais </a>
                 </div>
             </div>
         @endforeach
+        @if(count($events) == 0 && $search)
+            <p> Não há eventos com o nome {{ $search }}! <a href="/"> Ver Todos! </a></p>
+        @elseif(count($events) == 0)
+            <p> Não há eventos disponíveis </p>
+        @endif
     </div>
 </div>
 
