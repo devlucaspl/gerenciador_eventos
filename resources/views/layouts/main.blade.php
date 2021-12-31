@@ -79,7 +79,7 @@
             </div>
         </main>
         <footer>
-            <p>HDC Events &copy; 2021</p>
+            <p>Lucas Lopes &copy; 2021</p>
         </footer>
     </body>
 </html>
