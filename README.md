@@ -1,3 +1,15 @@
+## Resumo do Projeto
+
+O aplicativo web é um gerenciador de eventos aonde você pode Visualizar, participar e sair de eventos criados por outras pessoa além de poder criar e excluir eventos que podem ser privados ou livres.
+
+## Tecnologias Usadas - Front-end
+
+<img src="https://img.icons8.com/color/64/000000/html-5--v1.png"/> <img src="https://img.icons8.com/color/64/000000/css3.png"/> <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/64/000000/external-bootstrap-a-free-and-open-source-css-framework-logo-color-tal-revivo.png"/>
+
+## Tecnologias Usadas - Back-end
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
